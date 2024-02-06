@@ -45,7 +45,7 @@ const renderizarRecetas = (arrayUtilizado)=>{
     const recetaDiv = document.createElement("div")
     recetaDiv.style = "width: 200px;height: 500px; margin:20px"
     recetaDiv.innerHTML = `
-        <img src="./Imagenes/${pais}.png" class="card-img-top" alt="${pais}" width="150" height="100" style="margin-bottom: 10px;">  
+        <img src="./${pais}.png" class="card-img-top" alt="${pais}" width="150" height="100" style="margin-bottom: 10px;">  
         <p>${Presentacion()}</p>`
     let listaIngredientes = document.createElement("ul")
         ingredientes.forEach(function (ingrediente) {
