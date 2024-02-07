@@ -97,11 +97,26 @@ formularioRespuesta.addEventListener("submit", function (event) {
 
       // Calcular el puntaje total
     const puntajeTotalActual = puntajeReceta.filter(item => item.Correcto).length;
-
-      // Mostrar SweetAlert con el puntaje total
+   // Setear iconos segun puntajes posibles 
+      let icono;
+      if (puntajeTotalActual === 0) {
+          icono = 'error';
+          texto = 'Hay que estar mas atento!';
+      } else if (puntajeTotalActual === 1) {
+          icono = 'warning';
+          texto = 'Me parece que estabas fumando puchito afuera';
+      } else if (puntajeTotalActual === 2) {
+          icono = 'success';
+          texto = 'Muy bien! Este año te convertís en Chef';
+      } else if (puntajeTotalActual === 3) {
+          icono = 'success';
+          texto = 'Perfecto! La Chef Agus Fortes está orgullosx de vos ';
+      }
+    
+      // Uso de biblioteca sweet Aler 
       Swal.fire({
-          icon: 'success',
-          title: '¡Puntaje total!',
+          icon: icono,
+          title: texto ,
           text: `Tu puntaje total es: ${puntajeTotalActual}`
       });
   });
