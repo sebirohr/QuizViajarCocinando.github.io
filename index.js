@@ -98,7 +98,8 @@ formularioRespuesta.addEventListener("submit", function (event) {
       // Calcular el puntaje total
     const puntajeTotalActual = puntajeReceta.filter(item => item.Correcto).length;
    // Setear iconos segun puntajes posibles 
-      let icono, texto;
+      let icono;
+      let texto;
       if (puntajeTotalActual === 0) {
           icono = 'error';
           texto = 'Hay que estar mas atento!';
