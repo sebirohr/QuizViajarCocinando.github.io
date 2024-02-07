@@ -16,9 +16,9 @@ class Receta{
 
 
 const recetasBase = [
-    new Receta('Risotto', 'Italia', ["Arroz", "Manteca", "Queso", "Cebolla", "Vino blanco"]),
-    new Receta('Tortilla', 'España', ["Huevos", "Cebolla", "Papa", "Chorizo"]),
-    new Receta('Locro', 'Argentina', ["Maíz Blanco", "Porotos", "Zapallo", "Chorizo", "Carne"])
+    new Receta('Ceviche', 'Peru', ["Pescado fresco", "Limón/Lima", "Hielo" , "Ajo", "Cebolla morada", "Chiles", "Boniato", "Choclo"]),
+    new Receta('Paella', 'España', ["Arroz bomba", "Azafrán", "Caldo", "Ajo", "Cebolla", "Morrón","Tomate","Frutos de mar"]),
+    new Receta('Moqueca', 'Brasil', ["Pescado blanco", "Jugo de limón", "Jengibre", "Tomate", "Langostinos", "Ajo", "Cebolla", "Morrón",])
 ];
 
 const recetas = JSON.parse(localStorage.getItem("recetasBase")) || recetasBase;
